@@ -150,11 +150,26 @@
 .md-trigger {
 	height: 100%;
 	width: 100%;
+	/*cursor: pointer;*/
 }
 
-button {
-	outline: none;
+.md-hover {
+	background-color: #ffffff9f;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: .3s;
+	opacity: 0;
+	display: block;
+	z-index: 50;
 }
+
+.md-hover:hover{
+	display: block;
+	opacity: .9;
+	cursor: pointer;
+}
+
 /*
 .md-close {
 	background: rgba(0,0,0,0.1); 
